@@ -75,9 +75,9 @@
 .tab {
     flex-grow: 1;
     height: 80%;
-    margin-bottom: 0;
+    margin-bottom: 2px;
 
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 1rem;
     border: 1px solid $ui-black-transparent;
 
     padding: 0.125rem 1.25rem 0;
@@ -107,7 +107,7 @@
 
 .add-tab-button {
     margin: 8px 0;
-    margin-left: 4px;
+    margin-right: 4px;
     padding: 4px;
     font-size: larger;
 
