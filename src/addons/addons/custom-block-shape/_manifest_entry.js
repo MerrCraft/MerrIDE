@@ -21,7 +21,7 @@ const manifest = {
       "link": "https://scratch.mit.edu/users/GarboMuffin/"
     }
   ],
-  "enabledByDefault": false,
+  "enabledByDefault": true,
   "dynamicDisable": true,
   "userscripts": [
     {
@@ -51,7 +51,7 @@ const manifest = {
       "id": "cornerSize",
       "type": "integer",
       "min": 0,
-      "default": 100,
+      "default": 300,
       "max": 300
     },
     {
