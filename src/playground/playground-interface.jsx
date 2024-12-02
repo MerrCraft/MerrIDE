@@ -71,9 +71,9 @@ class Interface extends React.Component {
     }
     handleUpdateProjectTitle(title, isDefault) {
         if (isDefault || !title) {
-            document.title = `Snail IDE - ${this.props.intl.formatMessage(messages.defaultTitle)}`;
+            document.title = `MerrIDE - ${this.props.intl.formatMessage(messages.defaultTitle)}`;
         } else {
-            document.title = `${title} - Snail IDE`;
+            document.title = `${title} - MerrIDE`;
         }
     }
     render() {
