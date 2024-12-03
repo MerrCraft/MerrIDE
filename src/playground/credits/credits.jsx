@@ -75,6 +75,10 @@ const Credits = () => (
                 Donate to support TurboWarp.
             </a>
             <h2>Developers</h2>
+            <p>
+                MerrIDE is made by 1 dev, you can ask to help in the <a href="https://github.com/MerrCraft/MerrIDE">Repo</a>
+            </p>
+            <UserList users={UserData.merrIde} />
             <b>Fun Fact: Snail IDE was originally made only by @Mr_rudy/nmsderp, but he still makes a majority of the commits! Eventually, BA4X joined the dev team. Then, @o97doge/ACat/someCatInTheWorld joined the dev team as well, after making a bunch of useful pull requests.</b>
             <p>
                 Snail IDE is made by a small bunch of developers.

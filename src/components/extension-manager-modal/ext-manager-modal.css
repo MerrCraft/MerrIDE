@@ -9,6 +9,8 @@
     padding: 1.5rem;
     max-height: calc(100vh - 250px);
     overflow-y: auto;
+    border-radius:0.5rem;
+    margin:10px;
 }
 .centered {
     display: flex;

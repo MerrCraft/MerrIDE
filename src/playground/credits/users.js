@@ -122,7 +122,9 @@ const addonDevelopers = [
         username: 'LilyMakesThings'
     }
 ].map(fromHardcoded);
-
+const merrIde = [
+    'MerrCraft'
+]
 const pmDevelopers = [
     'enderhacker',
     'FreshPenguin112',
