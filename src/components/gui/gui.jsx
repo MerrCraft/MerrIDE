@@ -72,46 +72,6 @@ const messages = defineMessages({
     }
 });
 
-
-
-// Import your audio file
-import song from "moosic.mp3";
- 
-class App extends Component {
-    // Create state
-    state = {
- 
-        // Get audio file in a variable
-        audio: new Audio(song),
- 
-        // Set initial state of song
-        isPlaying: false,
-    };
- 
-    // Main function to handle both play and pause operations
-    playPause = () => {
- 
-        // Get state of song
-        let isPlaying = this.state.isPlaying;
- 
-        if (isPlaying) {
-            // Pause the song if it is playing
-            this.state.audio.pause();
-        } else {
- 
-            // Play the song if it is paused
-            this.state.audio.play();
-        }
- 
-        // Change the state of song
-        this.setState({ isPlaying: !isPlaying });
-    };
-
-
-
-
-
-
 const getFullscreenBackgroundColor = () => {
     const params = new URLSearchParams(location.search);
     if (params.has('fullscreen-background')) {
@@ -622,14 +582,6 @@ const GUIComponent = props => {
                                                     id="gui.gui.variablesTab"
                                                 />
                                             </div>
-                                            {this.state.isPlaying ?
-                                                "Song is Playing" :
-                                                "Song is Paused"}
-                        
-                                        {/* Button to call our main function */}
-                                        <button onClick={this.playPause}>
-                                            Play | Pause
-                                        </button>
                                         </MenuItem>}
                                         {/* {!tabOrder.includes('file') && <MenuItem onClick={() => addTabToEditor('file')}>
                                             <div className={styles.tabAdditionItem}>
