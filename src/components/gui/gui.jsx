@@ -599,14 +599,8 @@ const GUIComponent = props => {
                                             </div>
                                         </MenuItem>} */}
                                     </ContextMenu>
-                                    <script>
-                                    function play() {
-                                        const audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3');
-                                        audio.play();
-                                    }
-
-                                    </script>
-                                    <button onclick="play()">Play Moosic</button>
+                                    <button onclick="
+                                        const audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3'); audio.play();">Play Moosic</button>
                                     <div id="sa_addons_after_add_tab_anchor" />
                                 </TabList>
                                 <TabPanel className={tabClassNames.tabPanel}>
