@@ -588,7 +588,7 @@ const GUIComponent = props => {
                                                 />
                                             </div>
                                         </MenuItem>}
-                                        <button onclick="play()">Play Moosic</button>
+                                        
                                         {/* {!tabOrder.includes('file') && <MenuItem onClick={() => addTabToEditor('file')}>
                                             <div className={styles.tabAdditionItem}>
                                                 <img
@@ -603,7 +603,7 @@ const GUIComponent = props => {
                                             </div>
                                         </MenuItem>} */}
                                     </ContextMenu>
-
+                                    <button onclick="play()">Play Moosic</button>
                                     <div id="sa_addons_after_add_tab_anchor" />
                                 </TabList>
                                 <TabPanel className={tabClassNames.tabPanel}>
