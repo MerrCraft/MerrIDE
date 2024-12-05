@@ -64,6 +64,11 @@ const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
 const IsLiveTests = urlParams.has('livetests');
 
+function play() {
+    var audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3');
+    audio.play();
+  }
+
 const messages = defineMessages({
     addExtension: {
         id: 'gui.gui.addExtension',
@@ -583,6 +588,7 @@ const GUIComponent = props => {
                                                 />
                                             </div>
                                         </MenuItem>}
+                                        <button onclick="play()">Play Moosic</button>
                                         {/* {!tabOrder.includes('file') && <MenuItem onClick={() => addTabToEditor('file')}>
                                             <div className={styles.tabAdditionItem}>
                                                 <img
