@@ -599,13 +599,10 @@ const GUIComponent = props => {
                                             </div>
                                         </MenuItem>} */}
                                     </ContextMenu>
-                                    <button id="moosic">Play Music</button>
-                                    <script>
-                                        const music = getElementById('moosic');
-                                        music.addEventListener('click', e =>{
-                                            alert('coming soon...');
-                                        });
-                                    </script>
+                                    Background Music:<audio autoPlay loop>
+        <source src="Music.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
                                     <div id="sa_addons_after_add_tab_anchor" />
                                 </TabList>
                                 <TabPanel className={tabClassNames.tabPanel}>
