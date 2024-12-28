@@ -21,12 +21,7 @@ class HomeCommunication extends React.Component {
     
     componentDidMount() {
         window.addEventListener('message', this.wrapperEventHandler);
-        const iframe = document.createElement('iframe');
-        iframe.src = `${origin}/embed/editor?external=${encodeURIComponent(window.origin)}`;
-        iframe.width = 100;
-        iframe.height = 100;
-        iframe.style.display = 'none';
-        document.body.appendChild(iframe);
+        const iframe = document.getElementById('login');
         
         this.setState({
             frame: iframe
@@ -34,10 +29,6 @@ class HomeCommunication extends React.Component {
     }
     componentWillUnmount() {
         window.removeEventListener('message', this.wrapperEventHandler);
-        const iframe = this.state.frame;
-        if (iframe) {
-            iframe.remove();
-        }
         this.setState({
             frame: null
         });
@@ -46,7 +37,7 @@ class HomeCommunication extends React.Component {
     async wrapperEventHandler(e) {
         const data = e.data;
         // Don't recursively try to run this event.
-        if (e.origin === window.origin) {
+        if (e.origin !== 'https://www.snail-ide.com') {
             return;
         }
         if (!data.type) return;

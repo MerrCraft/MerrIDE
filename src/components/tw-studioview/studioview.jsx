@@ -60,6 +60,11 @@ class StudioViewComponent extends React.Component {
     }
     handleSelect (id) {
         this.props.onSelect(id);
+        /**
+         * fuck this bullshity ass design paradigm, i cant find where the FUCK this event chain actually ends
+         * implicitly assume that what ever the fuck happens above will synchronously put the id into the url to be used later
+         */
+        window.location.reload();
     }
     ref (el) {
         this.el = el;
