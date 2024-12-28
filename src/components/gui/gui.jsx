@@ -599,10 +599,14 @@ const GUIComponent = props => {
                                             </div>
                                         </MenuItem>} */}
                                     </ContextMenu>
-                                    Background Music:<audio autoPlay loop>
-        <source src="Music.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
+                                    <Box className={classNames(styles.pageWrapper, isPlayground ? styles.bodyWrapperPlayground : null)}>
+            {/* ... other code ... */}
+            <audio autoPlay loop>
+                <source src="path/to/moosic.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+            {/* ... other code ... */}
+        </Box>
                                     <div id="sa_addons_after_add_tab_anchor" />
                                 </TabList>
                                 <TabPanel className={tabClassNames.tabPanel}>
