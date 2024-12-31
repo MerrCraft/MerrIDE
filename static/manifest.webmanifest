@@ -1,7 +1,7 @@
 {
   "short_name": "MerrIDE",
   "name": "MerrIDE",
-  "description": "Mod of PenguinMod that was made to allow for really cool projects.",
+  "description": "Mod of Snail IDE that was made to allow for really cool projects.",
   "icons": [
     {
       "src": "images/applogo.svg",
@@ -15,7 +15,7 @@
     }
   ],
   "start_url": "editor",
-  "background_color": "#D414FF",
+  "background_color": "#ff9900",
   "display": "standalone",
-  "theme_color": "#D414FF"
+  "theme_color": "#ff9900"
 }
