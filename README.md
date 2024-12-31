@@ -9,7 +9,12 @@ after you install pnpm, clone the snail ide gui with ``git clone https://github.
 then run ``NODE_OPTIONS=--openssl-legacy-provider pnpm i --shamefully-hoist``. after that, you can type ``npm start`` or ``pnpm start`` or ``yarn start`` if you have yarn.<br/>
 if you want to use node 17+ , you'll have to add the enviroment variable `NODE_OPTIONS` with the content `--openssl-legacy-provider` before the start command.<br/>
 on linux/github codespaces you can do that by running the command `export NODE_OPTIONS=--openssl-legacy-provider`.
+## Or make a mod on Github
+1. Click the fork button
+2. goto actions and start .github/workflows/node.js.yml
+3. GO CRAZY WITH THOSE FILES!!!! 🥳🥳🥳🥳🥳
 
+Hope this helps making a great mod!
 ## License
 
 TurboWarp's modifications to Scratch are licensed under the GNU General Public License v3.0. See LICENSE or https://www.gnu.org/licenses/ for details.
