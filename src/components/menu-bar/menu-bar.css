@@ -78,6 +78,8 @@
     align-items: center;
     white-space: nowrap;
     height: $menu-bar-height;
+    border-radius:12px;
+    margin:4px;
 }
 
 .menu-bar-item.hoverable {

@@ -17,7 +17,7 @@ $stage-standard-border-width: 0.0625rem;
 $stage-full-screen-border-width: 0.1875rem;
 $stage-full-screen-stage-padding: 0.1875rem;
 
-$form-radius: calc($space / 2);
+$form-radius: calc($space / 1);
 
 /* layout contants from `layout-constants.js` */
 $full-size: 1095px;

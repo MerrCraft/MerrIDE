@@ -583,6 +583,9 @@ const GUIComponent = props => {
                                                     id="gui.gui.variablesTab"
                                                 />
                                             </div>
+                                            
+                                            
+                                        
                                         </MenuItem>}
                                         
                                         {/* {!tabOrder.includes('file') && <MenuItem onClick={() => addTabToEditor('file')}>
@@ -598,15 +601,18 @@ const GUIComponent = props => {
                                                 />
                                             </div>
                                         </MenuItem>} */}
+                                        
                                     </ContextMenu>
+                                    {
+                                        <div class="music">
+                                            <audio id="music" className="simple-audio" src="music.mp3" controls></audio>
+                                            </div>
+                                            
+                                        }
                                     <Box className={classNames(styles.pageWrapper, isPlayground ? styles.bodyWrapperPlayground : null)}>
             {/* ... other code ... */}
-            <audio autoPlay loop>
-                <source src="path/to/moosic.mp3" type="audio/mpeg" />
-                Your browser does not support the audio element.
-            </audio>
             {/* ... other code ... */}
-        </Box>
+        </Box>                         
                                     <div id="sa_addons_after_add_tab_anchor" />
                                 </TabList>
                                 <TabPanel className={tabClassNames.tabPanel}>
@@ -678,8 +684,9 @@ const GUIComponent = props => {
             </Box>
         );
     }}</MediaQuery>);
+    
 };
-
+                                        
 GUIComponent.propTypes = {
     accountNavOpen: PropTypes.bool,
     activeTabIndex: PropTypes.number,

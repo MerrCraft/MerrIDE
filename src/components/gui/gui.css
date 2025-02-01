@@ -1,6 +1,49 @@
 @import "../../css/units.css";
 @import "../../css/colors.css";
 @import "../../css/z-index.css";
+audio {
+    width: 120px;
+    height: 40px;
+    background-color: #ffffff00;
+    overflow:clip;
+}
+audio::-webkit-media-controls-enclosure {
+    background-color: #ffffff00;
+    padding:0px;
+}
+audio::-webkit-media-controls-panel {
+    background-color: #ffffff00;
+    margin: 0px;
+    padding:0px;
+}
+audio::-webkit-media-controls-timeline {
+    display: none;
+}
+audio::-webkit-media-controls-mute-button {
+    display: none;
+}
+
+audio::-webkit-media-controls-play-button{
+    margin:0px;
+    padding:0px;
+}
+
+audio::-webkit-media-controls-timeline-container{
+    display: none;
+}
+
+audio::-webkit-media-controls-current-time-display{
+    display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display{
+    display: none;
+}
+
+audio::-webkit-media-controls-volume-slider-container{
+    display: none;
+}
+
 
 .page-wrapper {
     height: 100%;
@@ -173,7 +216,7 @@
 }
 
 .tab:hover {
-  background-color: $ui-primary;
+  background-color: lightgrey;
 }
 [theme="dark"] .tab:hover {
     background-color: $ui-secondary;
