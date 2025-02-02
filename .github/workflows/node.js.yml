@@ -33,7 +33,7 @@ jobs:
     - name: Install dependencies and build site
       run: npm i -g pnpm@latest && pnpm up && NODE_OPTIONS=--openssl-legacy-provider pnpm i --shamefully-hoist && NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production webpack --bail
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
+      uses: actions/upload-pages-artifact@v4
       with:
         path: ./build/
 
